@@ -1,4 +1,4 @@
-package day03_dataCasting_WrapperClasses;
+package day03_scanner_dataCasting;
 
 public class C06_ExplicitNarroving {
     public static void main(String[] args) {
