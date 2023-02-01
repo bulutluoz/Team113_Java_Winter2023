@@ -27,14 +27,14 @@ public class C05_DataCasting {
 
         double sayi3=24;
 
-        sayi1=sayi2;
-        //sayi1=sayi3;
+        sayi1=sayi2; // int <=== short
+        //sayi1=sayi3;    int <=== double
 
-        //sayi2=sayi1;
-        //sayi2=sayi3;
+        //sayi2=sayi1; short <=== int
+        //sayi2=sayi3; short <=== double
 
-        sayi3=sayi1;
-        sayi3=sayi2;
+        sayi3=sayi1; // double <=== int
+        sayi3=sayi2; // double <=== short
 
         sayi1=ch;
         //sayi2=ch;
