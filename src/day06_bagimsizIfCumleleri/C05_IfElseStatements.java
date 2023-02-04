@@ -10,7 +10,9 @@ public class C05_IfElseStatements {
             Ve bu olasiliklardan birisi mutlaka calisacaksa
             If Else Statements kullaniriz
 
-
+            If-else statement'da if bodys'si veya else body'si mutlaka calisir
+            ikisinin birden calisma ihtimali YOKTUR
+            ikisinin de calismama ihtimali YOKTUR
 
          */
 
@@ -28,7 +30,7 @@ public class C05_IfElseStatements {
             System.out.println("Sinifi gectin");
         }
 
-        if (not<50) {
+        else {
             System.out.println("Maalesef kaldin");
         }
 
@@ -36,10 +38,22 @@ public class C05_IfElseStatements {
         // Kullanicidan pozitif bir tamsayi alin
         // sayinin tek veya cift sayi oldugunu yazdirin
 
+        System.out.println("pozitif bir tam sayi giriniz");
+        int sayi = scan.nextInt();
 
-
+        if (sayi % 2 == 0){
+            System.out.println("Girilen sayi cift sayi");
+        } else {
+            System.out.println("Girilen sayi tek");
+        }
 
         // Kullanicidan pozitif bir tamsayi alin
         // 5 ile bolunup bolunmedigini yazdirin
+
+        if (sayi % 5 == 0){
+            System.out.println("sayi 5 ile tam olarak bolunebilir");
+        }else {
+            System.out.println("sayi 5 ile tam olarak bolunemez");
+        }
     }
 }
