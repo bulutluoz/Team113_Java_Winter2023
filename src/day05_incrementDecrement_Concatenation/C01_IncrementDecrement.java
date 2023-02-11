@@ -8,7 +8,7 @@ public class C01_IncrementDecrement {
 
         // a'nin degerini 3 artirin ve yeni degerini olusturacaginiz b variable'ina atayin
 
-        // a=a+3;
+        // a = a + 3;
          a += 3;
 
        //a++;

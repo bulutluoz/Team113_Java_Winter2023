@@ -12,6 +12,8 @@ public class C04_StringIntGecisler {
 
         System.out.println(sayi++); // 423
 
+        System.out.println(sayi); // 424
+
 
         int a=20;
         int b=40;
