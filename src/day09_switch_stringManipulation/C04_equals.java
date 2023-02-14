@@ -16,6 +16,36 @@ public class C04_equals {
         System.out.println(str1.equalsIgnoreCase(str2)); // true
         System.out.println(str1.equalsIgnoreCase(str4)); // true
 
+        String str5 = "Java";
+        String str6 = "Ja";
+        String str7 = "va";
+        String str8 = str6.concat(str7);
+
+        System.out.println(str8);// Java
+
+        System.out.println(str1 == str5); // Java == Java  true
+
+        System.out.println(str1 == str8); // Java == Java false
+
+        /*
+            == ile Stringleri karsilastirirsak hem metin degerine hem de referanslarina bakar
+            equals ile Stringleri karsilastirirsak sadece metin degerlerine bakar
+
+            == ile Stringleri karsilastirdigimizda bekledigimizden farkli sonuclar alabilir,
+            bu yuzden iki String'i karsilastiracaksak == degil equals kullaniriz
+         */
+
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
