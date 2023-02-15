@@ -2,7 +2,7 @@ package day09_switch_stringManipulation;
 
 import java.util.Locale;
 
-public class C03_StringManipulation {
+public class C03_toLowercase_toUppercase {
     public static void main(String[] args) {
 
         String str= "Java Candir";
