@@ -5,7 +5,7 @@ public class C06_StringiTerseCevirme {
         //Soru 10 (interview)- Kullanicidan bir String isteyin
         //        ve String’i tersine cevirip kaydedin.
 
-        String input = "Java Candir, Can.";
+        String input = "Java Candir";
 
         // output : ridnaC avaJ
 
