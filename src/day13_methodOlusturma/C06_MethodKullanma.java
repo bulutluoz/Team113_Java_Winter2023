@@ -1,5 +1,7 @@
 package day13_methodOlusturma;
 
+import day14_methodOverloading_whileLoop.C02_isAsal;
+
 import java.util.Scanner;
 
 public class C06_MethodKullanma {
