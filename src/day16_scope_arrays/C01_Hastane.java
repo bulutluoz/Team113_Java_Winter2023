@@ -33,5 +33,9 @@ public class C01_Hastane {
         System.out.println(dok3.dogumYili); // 0
         System.out.println(dok3.fakulte); // Tip fakultesi
 
+        System.out.println(ADoktor.fakulte);
+        // static variable'lar icin tavsiye edilen erisim yontemi
+        // classIsmi.staticUyeIsmi seklinde yazimdir.
+        // bu kullanim bicimine static yontem denir
     }
 }
