@@ -18,7 +18,20 @@ public class C01_Hastane {
         dok2.soyisim="Celik";
         System.out.println(dok2.soyisim); // Celik
 
-        System.out.println(dok1);
+        System.out.println(dok1); // referansini yazdirir
+
+        System.out.println(dok1.fakulte); // Tip
+        System.out.println(dok2.fakulte); // Tip
+
+        dok1.isim = "Burcu";
+        System.out.println(dok2.isim); // null
+
+        dok1.fakulte = "Tip fakultesi";
+        System.out.println(dok2.fakulte); // Tip fakultesi
+
+        ADoktor dok3= new ADoktor();
+        System.out.println(dok3.dogumYili); // 0
+        System.out.println(dok3.fakulte); // Tip fakultesi
 
     }
 }
