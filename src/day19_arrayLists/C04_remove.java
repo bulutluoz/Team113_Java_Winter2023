@@ -30,6 +30,27 @@ public class C04_remove {
         sayilar.add(18);
         sayilar.add(2);
 
+        System.out.println(sayilar); // [1, 3, 18, 2]
+        /*
+            Eger sayilardan olusan bir list varsa
+            remove method'una yazacagimiz sayiyi index olarak kabul eder
+
+            Eger sayiyi silmek isterseniz
+            remove method'undan once o sayiyi bir objeye atayip
+            remove method'unda obje ismini yazabiliriz
+         */
+        sayilar.remove(1);
+        System.out.println(sayilar); // [1, 18, 2]
+
+        // 1'i silelim
+
+        Integer silinecekSayi = 1;
+
+        sayilar.remove(silinecekSayi);
+
+        System.out.println(sayilar); // [18, 2]
+
+
 
     }
 }
