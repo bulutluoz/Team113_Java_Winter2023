@@ -38,12 +38,12 @@ public class C02_ConstructorCall {
         C02_ConstructorCall obj3 = new C02_ConstructorCall(7,"Selcuk");
         System.out.println(obj3.sayi); // 7
         System.out.println(obj3.str); // Java
-        /*
+
         C02_ConstructorCall obj2 = new C02_ConstructorCall("Java");
         System.out.println(obj2.sayi);// 5
         System.out.println(obj2.str); // Java
-         C02_ConstructorCall obj1 = new C02_ConstructorCall();
+        C02_ConstructorCall obj1 = new C02_ConstructorCall();
 
-         */
+
     }
 }
