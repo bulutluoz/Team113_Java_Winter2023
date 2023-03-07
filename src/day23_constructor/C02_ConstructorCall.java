@@ -42,6 +42,8 @@ public class C02_ConstructorCall {
         C02_ConstructorCall obj2 = new C02_ConstructorCall("Java");
         System.out.println(obj2.sayi);// 5
         System.out.println(obj2.str); // Java
+
+        System.out.println("======");
         C02_ConstructorCall obj1 = new C02_ConstructorCall();
 
 
