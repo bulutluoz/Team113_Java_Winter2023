@@ -24,6 +24,8 @@ public class C04_StringHavuzu {
         System.out.println(str1 == str4 ); // true
         System.out.println(str1 == str5 ); // false
 
+        System.out.println(str1=="Java"); // true
+
         /*
             == hem referansi, hem de degeri karsilastirir
             equals() ise sadece degerleri karsilastirir
