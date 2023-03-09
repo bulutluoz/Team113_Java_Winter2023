@@ -36,5 +36,6 @@ public class C04_StringHavuzu {
             ancak new keyword kullanilarak olusturulan veya method kullanilan String'ler
             == ile karsilastirilirlarsa sonuc FALSE olur
          */
+
     }
 }
