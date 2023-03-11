@@ -15,5 +15,6 @@ public class C02_MetniTerseCevirme {
         sb.reverse();
 
         System.out.println(sb);
+
     }
 }
