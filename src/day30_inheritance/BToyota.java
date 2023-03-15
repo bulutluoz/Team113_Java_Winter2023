@@ -7,6 +7,7 @@ public class BToyota extends Araba{
     String lastik = "Bridgestone";
 
     public void motor(){
+
         System.out.println("Toyotalar cevreci toyota motorlar kullanir");
     }
 
