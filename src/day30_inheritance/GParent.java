@@ -4,7 +4,8 @@ public class GParent extends FGrandParent {
 
     protected int sayiParent;
 
-    GParent(){
+    protected GParent(){
+
         System.out.println("Parent constructor calisti");
     }
 }
