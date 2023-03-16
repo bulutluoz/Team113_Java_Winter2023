@@ -5,7 +5,7 @@ public class CToyota extends BAraba{
     protected String str2="Toyota";
 
     protected CToyota(){
-
+        this("Java");
         System.out.println("Parametresiz Toyota constructor'i calisti");
     }
 
