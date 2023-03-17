@@ -11,14 +11,17 @@ public class FHayvanlar {
     }
 
     public void beslenme(){
+
         System.out.println("beslenirler");
     }
 
     public void cogalma(){
+
         System.out.println("cogalirlar");
     }
 
     public void omur(){
+
         System.out.println("yasar ve olurler");
     }
 
