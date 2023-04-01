@@ -83,4 +83,47 @@ public class MapMethodDepo {
         return okulMap;
 
     }
+
+    public static Map<Integer, String> yilSonuSiniflariDegistir(Map<Integer, String> okulMap) {
+
+        // 1- key'leri bir Set olarak kaydedelim
+        Set<Integer> keySeti= okulMap.keySet(); // // [101, 102, 103, 104, 105, 106]
+        // 2- Set'deki her bir key'e ait value'yu for-each loop ile ele alalim
+        for (Integer eachKey: keySeti
+             ) {
+
+            // 3- her key'e ait value'yu split() ile ayirip, array olarak kaydedelim
+            String[] valueArr = okulMap.get(eachKey).split("-"); // [Ali, Cem, 10, H, MF]
+            // 4- array olarak kaydettigimiz bilgilerde istenen update'i yapalim
+
+            if (valueArr[2].equalsIgnoreCase("12")){
+                valueArr[2] = "Mezun";
+            } else{ // "9"  "10"  "11"
+
+                int sinif = Integer.parseInt(valueArr[2]);
+                sinif++;
+
+                valueArr[2] = sinif+"";
+
+            } // [Ali, Cem, 11, H, MF]
+
+            // 5- array'in yeni halini String olarak birlestirip yeniValue elde edelim
+
+            String yeniValue ="";
+
+            for (int i = 0; i < valueArr.length-1 ; i++) {
+
+                yeniValue += valueArr[i]+"-";
+            }
+
+            yeniValue += valueArr[valueArr.length-1];
+
+            // 6- her bir key ve yeniValue'yu map'e ekleyerek map'i update edelim
+
+            okulMap.put(eachKey,yeniValue);
+        }
+
+        // 7- map'in yeni halini return edelim
+        return okulMap;
+    }
 }
