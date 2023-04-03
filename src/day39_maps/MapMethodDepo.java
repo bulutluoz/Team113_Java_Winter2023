@@ -126,4 +126,33 @@ public class MapMethodDepo {
         // 7- map'in yeni halini return edelim
         return okulMap;
     }
+
+    public static Map<Integer, String> numaraIleSoyisimDegistir(Map<Integer, String> okulMap, int okulNo, String yeniSoyisim) {
+
+        // 1- istenen value'yu alalim
+        String istenenOgrenciValue = okulMap.get(okulNo); // Veli-Can-10-M-TM
+
+        // 2- value uzerinde islem yapabilmek Split ile array'e kaydedelim
+
+        String[] valueArr= istenenOgrenciValue.split("-"); // [Veli, Can, 10, M, TM]
+
+        // 3- value array'i uzerinde istenen islemi yap
+
+        valueArr[1] = yeniSoyisim; // // [Veli, Han, 10, M, TM]
+
+        // 4- array'de degisiklik yapildiysa, map'i update etmemiz gerekir
+        //    bunun icin de array'i yeniden value yapisina uygun sekilde
+        //    String'e donusturmeliyiz
+
+
+        String yeniValue= valueArr[0] + "-" + valueArr[1] + "-" +
+                          valueArr[2] + "-" +valueArr[3] + "-" + valueArr[4];
+
+        // 5- update edilmis yeni value'yu, key kullanarak map'e ekleyelim
+
+        okulMap.put(okulNo,yeniValue);
+
+        return okulMap;
+
+    }
 }
